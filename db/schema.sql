@@ -1,0 +1,2 @@
+DROP DATABASE IF EXISTS crowdfund_db2;
+CREATE DATABASE crowdfund_db2;

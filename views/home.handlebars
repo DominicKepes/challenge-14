@@ -1,0 +1,18 @@
+  <div class="container mt-5">
+    <h1>Welcome to Our Blog!</h1>
+    {{#if posts.length}}
+      <div class="list-group mt-3">
+        {{#each posts}}
+          <div class="list-group-item">
+            <h2 class="mb-1">{{title}}</h2>
+            <p class="mb-1">{{content}}</p>
+            <p class="mb-1">Written by: {{user.username}}</p>
+            <br></br>
+            <p class="mb-1">Posted: {{createdAt}}</p>
+          </div>
+        {{/each}}
+      </div>
+    {{else}}
+      <p>No posts found.</p>
+    {{/if}}
+  </div>
